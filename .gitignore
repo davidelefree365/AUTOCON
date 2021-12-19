@@ -6,6 +6,8 @@ __pycache__/
 # C extensions
 *.so
 README.md
+GITHUB_TOKEN.txt
+
 # Distribution / packaging
 .Python
 build/
