@@ -61,16 +61,16 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: main
         
-    - name: 'Send mail'
-        uses: davidelefree365/action-send-mail@master
-        with:
-          server_address: smtp.126.com
-          server_port: 465
-          username: ${{ secrets.MAIL_USERNAME_SEND }}
-          password: ${{ secrets.MAIL_PASSWORD_SEND }}
-          subject: OFFICE签到
-          body: file://office.txt
-          to: ${{ secrets.MAIL_USERNAME_GET }}
-          from: My 126 mail
-          content_type: text/html
+    - name: Send mail
+      uses: davidelefree365action-send-mail@master
+      with:
+        server_address: smtp.126.com
+        server_port: 465
+        username: ${{ secrets.MAIL_USERNAME_SEND }}
+        password: ${{ secrets.MAIL_PASSWORD_SEND }}
+        subject: OFFICE签到
+        body: file://office.txt
+        to: ${{ secrets.MAIL_USERNAME_GET }}
+        from: My 126 mail
+        content_type: text/html
 
