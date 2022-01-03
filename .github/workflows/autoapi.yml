@@ -62,7 +62,7 @@ jobs:
         branch: main
         
     - name: Send mail
-      uses: davidelefree365action-send-mail@master
+      uses: davidelefree365/action-send-mail@master
       with:
         server_address: smtp.126.com
         server_port: 465
